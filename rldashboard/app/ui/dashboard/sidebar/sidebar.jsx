@@ -14,7 +14,7 @@ import {
 } from "react-icons/md";
 const menuItems = [
     {
-        title: "Pages",
+        title: "League Manager",
         list: [
             {
                 title: "Dashboard",
@@ -30,32 +30,32 @@ const menuItems = [
         
     },
     {
-        title: "Placeholder 1",
+        title: "Calendar",
         list: [
             {
-                title: "Dashboard",
-                path: "/dashboard",
+                title: "Calendar",
+                path: "/dashboard/schedule",
                 icon: <MdDashboard />,
             },
             {
-                title: "My Team",
-                path: "/dashboard/team",
+                title: "Match Results",
+                path: "/dashboard/matchresults",
                 icon: <MdSupervisedUserCircle />,
             },
         ]
         
     },
     {
-        title: "Placeholder 2",
+        title: "Chat",
         list: [
             {
-                title: "Dashboard",
-                path: "/dashboard",
+                title: "Team Chat",
+                path: "/dashboard/teamchat",
                 icon: <MdDashboard />,
             },
             {
                 title: "My Team",
-                path: "/dashboard/team",
+                path: "/dashboard/messages",
                 icon: <MdSupervisedUserCircle />,
             },
         ]
