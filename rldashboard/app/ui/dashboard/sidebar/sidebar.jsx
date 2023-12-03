@@ -60,7 +60,7 @@ const menuItems = [
             },
         ]
         
-    }
+    },
     
 ]
 const Sidebar = () => {
