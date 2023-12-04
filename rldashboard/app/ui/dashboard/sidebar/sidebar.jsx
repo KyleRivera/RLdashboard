@@ -54,7 +54,7 @@ const menuItems = [
                 icon: <MdDashboard />,
             },
             {
-                title: "My Team",
+                title: "Messages",
                 path: "/dashboard/messages",
                 icon: <MdSupervisedUserCircle />,
             },
