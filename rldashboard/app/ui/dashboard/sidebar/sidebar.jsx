@@ -10,8 +10,16 @@ import {
     MdPeople,
     MdOutlineSettings,
     MdHelpCenter,
-    MdLogout,
+    MdLogout
+    ,
 } from "react-icons/md";
+import { RiTeamFill } from "react-icons/ri";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { IoToday } from "react-icons/io5";
+import { MdOutlineMarkUnreadChatAlt } from "react-icons/md";
+import { IoMdChatbubbles } from "react-icons/io";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { MdCoPresent } from "react-icons/md";
 const menuItems = [
     {
         title: "League Manager",
@@ -19,12 +27,17 @@ const menuItems = [
             {
                 title: "Dashboard",
                 path: "/dashboard",
-                icon: <MdDashboard />,
+                icon: <MdCoPresent />,
+            },
+            {
+                title: "My League",
+                path: "/dashboard/league",
+                icon: <FaPeopleGroup />,
             },
             {
                 title: "My Team",
                 path: "/dashboard/team",
-                icon: <MdSupervisedUserCircle />,
+                icon: <RiTeamFill />,
             },
         ]
         
@@ -35,12 +48,12 @@ const menuItems = [
             {
                 title: "Calendar",
                 path: "/dashboard/schedule",
-                icon: <MdDashboard />,
+                icon: <IoToday />,
             },
             {
                 title: "Match Results",
                 path: "/dashboard/matchresults",
-                icon: <MdSupervisedUserCircle />,
+                icon: <FaArrowTrendUp />,
             },
         ]
         
@@ -51,12 +64,12 @@ const menuItems = [
             {
                 title: "Team Chat",
                 path: "/dashboard/teamchat",
-                icon: <MdDashboard />,
+                icon: <IoMdChatbubbles />,
             },
             {
                 title: "Messages",
                 path: "/dashboard/messages",
-                icon: <MdSupervisedUserCircle />,
+                icon: <MdOutlineMarkUnreadChatAlt />,
             },
         ]
         
@@ -83,6 +96,10 @@ const Sidebar = () => {
                     </li>
                  ))}
             </ul>
+            <button className={styles.logout}>
+                <MdLogout />
+                Logout
+            </button>
         </div>
     )
 }
