@@ -1,7 +1,7 @@
 import Playercard1 from "../ui/dashboard/playercard1/playercard1";
 import styles from "../ui/dashboard/dashboard.module.css";
 import Rightbar from "../ui/dashboard/rightbar/rightbar";
-import Chart from "../ui/dashboard/chart/chart"
+import RecentMatches from "../ui/dashboard/recentmatches/recentmatches"
 const Dashboard = () => {
     return (
         <div className={styles.wrapper}>
@@ -11,7 +11,7 @@ const Dashboard = () => {
                     <Playercard1/>
                     <Playercard1/>
                 </div>
-                <Chart/>
+                <RecentMatches/>
             </div>
             <div className={styles.side}>
                 <Rightbar/>
